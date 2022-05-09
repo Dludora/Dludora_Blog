@@ -21,11 +21,12 @@ params:
         # imageHeight: 120 # custom size
         buttons:
             - name: SoftWareEG
-                url: /Dludora_Blog/posts
+              url: /Dludora_Blog/posts
   
     socialIcons: 
         - name: "github"
-            url: "https://github.com/Dludora"
+          url: "https://github.com/Dludora"
+
     fuseOpts:
         isCaseSensitive: false
         shouldSort: true
@@ -71,6 +72,9 @@ menu:
       name:  Search
       url: /search
       weight: 10
+    - identifier: Archive
+      name: Archive
+      url: /archive
     - identifier: Github
       name: Github
       url: https://github.com/Dludora/Dludora_Blog
