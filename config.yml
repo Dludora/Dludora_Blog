@@ -15,18 +15,19 @@ params:
         enabled: true
         title: "谁看谁sb" 
         subtitle: "嘿! sb!"
-        # imageUrl: "<image link>" # optional
-        # imageTitle: "<title of image as alt>" # optional
-        # imageWidth: 120 # custom size
-        # imageHeight: 120 # custom size
+        imageUrl: "/Dludora_Blog/images/头像/Dludura.jpg" # optional
+        imageTitle: "Dludora himself" # optional
+        imageWidth: 120 # custom size
+        imageHeight: 120 # custom size
         buttons:
             - name: SoftWareEG
-              url: /Dludora_Blog/posts
+              url: /Dludora_Blog/SoftWareEG
   
     socialIcons: 
         - name: "github"
           url: "https://github.com/Dludora"
-
+        - name: "email"
+          url: "https://outlook.live.com/"
     fuseOpts:
         isCaseSensitive: false
         shouldSort: true
