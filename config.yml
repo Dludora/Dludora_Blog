@@ -21,7 +21,7 @@ params:
         imageHeight: 120 # custom size
         buttons:
             - name: 软工
-                url: "/Dludora_Blog/SoftWareEG"
+                url: "/Dludora_Blog/posts"
   
     socialIcons: 
         - name: "github"
