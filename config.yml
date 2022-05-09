@@ -1,6 +1,6 @@
 baseURL: https://Dludora.github.io/Dludora_Blog
 languageCode: en-us
-title: My New Hugo Site
+title: Dludora's Blog
 theme: "PaperMod"
 
 params:
@@ -17,11 +17,11 @@ params:
         subtitle: "嘿! sb!"
         # imageUrl: "<image link>" # optional
         # imageTitle: "<title of image as alt>" # optional
-        imageWidth: 120 # custom size
-        imageHeight: 120 # custom size
+        # imageWidth: 120 # custom size
+        # imageHeight: 120 # custom size
         buttons:
-            - name: "软工"
-                url: "/Dludora_Blog/content/posts"
+            - name: SoftWareEG
+                url: /Dludora_Blog/posts
   
     socialIcons: 
         - name: "github"
