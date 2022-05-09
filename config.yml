@@ -4,28 +4,28 @@ title: My New Hugo Site
 theme: "PaperMod"
 
 params:
+    author: Dludora
+    env: production
     ShowShareButtons: true
     ShowReadingTime: true
 
     profileMode:
+        author: Dludora
+        env: production
         enabled: true
-        title: "<Title>" # optional default will be site title
-        subtitle: "This is subtitle"
-        imageUrl: "<image link>" # optional
-        imageTitle: "<title of image as alt>" # optional
+        title: "谁看谁sb" 
+        subtitle: "嘿! sb!"
+        # imageUrl: "<image link>" # optional
+        # imageTitle: "<title of image as alt>" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
         buttons:
-            - name: Archive
-                url: "/archive"
-            - name: Github
-                url: "https://github.com/"
-
-    # socialIcons: # optional
-    #     - name: "<platform>"
-    #         url: "<link>"
-    #     - name: "<platform 2>"
-    #         url: "<link2>"
+            - name: 软工
+                url: "/Dludora_Blog/SoftWareEG"
+  
+    socialIcons: 
+        - name: "github"
+            url: "https://github.com/Dludora"
     fuseOpts:
         isCaseSensitive: false
         shouldSort: true
@@ -35,8 +35,43 @@ params:
         minMatchCharLength: 0
         keys: ["title", "permalink", "summary", "content"]
 
+    Displays a Scroll-to-Top button in right-bottom corner: true
+    ShowShareButtons: false # share button
+    ShowReadingTime: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: false
+    ShowPostNavLinks: false # next suggestion
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: false
+    hidemeta: false
+    hideSummary: false
+    showtoc: false
+    tocopen: false
+    responsiveImages: false
+    linkFullImages: true
+
+    editPost:
+        URL: "https://github.com/Dludora/Dludora_Blog/tree/main/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
+
+    cover:
+        responsiveImages: false
+        linkFullImages: true
 outputs:
     home:
         - HTML
         - RSS
         - JSON # is necessary
+
+menu:
+  main:
+    - identifier: Search
+      name:  Search
+      url: /search
+      weight: 10
+    - identifier: Github
+      name: Github
+      url: https://github.com/Dludora/Dludora_Blog
+      weight: 30
