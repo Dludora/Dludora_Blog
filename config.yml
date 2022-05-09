@@ -2,3 +2,41 @@ baseURL: https://Dludora.github.io/Dludora_Blog
 languageCode: en-us
 title: My New Hugo Site
 theme: "PaperMod"
+
+params:
+    ShowShareButtons: true
+    ShowReadingTime: true
+    
+    profileMode:
+        enabled: true
+        title: "<Title>" # optional default will be site title
+        subtitle: "This is subtitle"
+        imageUrl: "<image link>" # optional
+        imageTitle: "<title of image as alt>" # optional
+        imageWidth: 120 # custom size
+        imageHeight: 120 # custom size
+        buttons:
+            - name: Archive
+                url: "/archive"
+            - name: Github
+                url: "https://github.com/"
+
+    socialIcons: # optional
+        - name: "<platform>"
+            url: "<link>"
+        - name: "<platform 2>"
+            url: "<link2>"
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
