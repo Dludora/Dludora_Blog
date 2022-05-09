@@ -21,7 +21,7 @@ params:
         imageHeight: 120 # custom size
         buttons:
             - name: SoftWareEG
-              url: /Dludora_Blog/posts/SoftWareEG
+              url: /Dludora_Blog/posts
             - name: MySql
               url: /Dludora_Blog/posts/MySql
     socialIcons: 
