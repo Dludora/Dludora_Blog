@@ -13,16 +13,17 @@ params:
         author: Dludora
         env: production
         enabled: true
-        title: "谁看谁sb" 
-        subtitle: "嘿! sb!"
-        imageUrl: "/Dludora_Blog/images/头像/Dludura.jpg" # optional
+        title: "Dludora的个人世界" 
+        subtitle: "没什么要说的"
+        imageUrl: "/Dludora_Blog/images/头像/Dludora.jpg" # optional
         imageTitle: "Dludora himself" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
         buttons:
             - name: SoftWareEG
               url: /Dludora_Blog/SoftWareEG
-  
+            - name: MySql
+              url: /Dludora_Blog/MySql
     socialIcons: 
         - name: "github"
           url: "https://github.com/Dludora"
