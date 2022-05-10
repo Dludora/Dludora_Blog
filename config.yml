@@ -15,9 +15,9 @@ params:
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
         buttons:
-            - name: softwareeg
+            - name: SoftWareEG
               url: /Dludora_Blog/softwareeg
-            - name: mysql
+            - name: MySQL
               url: /Dludora_Blog/mysql
     socialIcons: 
         - name: "github"
