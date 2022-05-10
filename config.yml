@@ -6,11 +6,7 @@ theme: "PaperMod"
 params:
     author: Dludora
     env: production
-    
-
     profileMode:
-        author: Dludora
-        env: production
         enabled: true
         title: "Dludora的个人世界" 
         subtitle: "没什么要说的"
@@ -20,9 +16,9 @@ params:
         imageHeight: 120 # custom size
         buttons:
             - name: SoftWareEG
-              url: SoftWareEG
-            # - name: MySQL
-            #   url: /Dludora_Blog/MySQL
+              url: /Dludora_Blog/SoftWareEG
+            - name: MySQL
+              url: /Dludora_Blog/MySQL
     socialIcons: 
         - name: "github"
           url: "https://github.com/Dludora"
