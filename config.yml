@@ -22,8 +22,6 @@ params:
         buttons:
             - name: SoftWareEG
               url: /Dludora_Blog/posts
-            - name: MySql
-              url: /Dludora_Blog/posts/MySql
     socialIcons: 
         - name: "github"
           url: "https://github.com/Dludora"
