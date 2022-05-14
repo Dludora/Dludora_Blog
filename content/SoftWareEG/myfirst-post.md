@@ -15,10 +15,6 @@ draft: false
 
 ​	cd进该目录，输入 `python manage.py runserver`，运行该项目，终端上出现链接
 
-#### 新建组件
-
-​	再次在终端上输入`python manage.py startapp xxx`，创建出`xxx`组件
-
 #### 配置数据库
 
 ​	找到第一次创建出的文件夹下，找到`settings.py`文件，找到如下代码
@@ -48,3 +44,72 @@ DATABASES = {
 ```
 
 运行 `python manage.py migrate`
+
+#### 新建应用
+
+​	再次在终端上输入`python manage.py startapp xxx`，创建出`xxx`应用
+
+​	找到第一次创建出的文件夹下，找到`settings.py`文件，找到如下代码
+
+```python
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'backend.apps.BackendConfig',
+]
+```
+
+​	把新建的应用添加进去,修改如下
+
+```
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'backend.apps.BackendConfig',
+    'xxx.apps.XxxConfig',
+]
+```
+
+在`models.py`文件中添加好自己想要的内容后，运行`python manage.py makemigrations`, `python manage.py migrate`
+
+##### 超级管理员
+
+在终端中，输入`python manage.py createsuperuser`后，按照提示创建超级管理员账号
+
+在服务端口后加`/admin`，即可进入超级管理员界面，如果想要在该界面管理新建出的xxx应用，则修改改应用目录下的admin.py文件
+
+`admin.py`文件
+
+```python
+from django.contrib import admin
+from .models import Author
+# Register your models here.
+
+
+class AuthorAdmin(admin.ModelAdmin):
+    list_display = ['username', 'password', 'email']
+
+
+admin.site.register(Author, AuthorAdmin)
+
+```
+
+`models.py`文件
+
+```python
+from django.db import models
+class Author(models.Model):
+    # Author表项，含用户名和密码，均为字符串属性，并设置最大长度
+    username = models.CharField(max_length=50,primary_key=False)
+    password = models.CharField(max_length=20)
+    email = models.EmailField()
+```
+
