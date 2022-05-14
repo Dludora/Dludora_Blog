@@ -19,6 +19,8 @@ params:
               url: /Dludora_Blog/softwareeg
             - name: MySQL
               url: /Dludora_Blog/mysql
+            - name: Vue
+              url: /Dludora_Blog/vue
     socialIcons: 
         - name: "github"
           url: "https://github.com/Dludora"
