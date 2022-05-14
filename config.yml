@@ -6,6 +6,12 @@ theme: "PaperMod"
 params:
     author: Dludora
     env: production
+    ShowCodeCopyButtons: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowToc: true
+    ShowReadingTime: true
+    comments: true
     profileMode:
         enabled: true
         title: "Dludora的个人世界" 
