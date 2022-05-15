@@ -42,17 +42,12 @@ params:
         keys: ["title", "permalink", "summary", "content"]
 
     Displays a Scroll-to-Top button in right-bottom corner: true
-    ShowShareButtons: false # share button
     ShowReadingTime: true
     ShowBreadCrumbs: true
-    ShowCodeCopyButtons: false
-    ShowPostNavLinks: false # next suggestion
     disableSpecial1stPost: false
     disableScrollToTop: false
-    comments: false
     hidemeta: false
     hideSummary: false
-    showtoc: false
     tocopen: false
     responsiveImages: false
     linkFullImages: true
