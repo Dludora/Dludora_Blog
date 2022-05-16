@@ -51,6 +51,7 @@ params:
     tocopen: false
     responsiveImages: false
     linkFullImages: true
+    comments: true
 
     editPost:
         URL: "https://github.com/Dludora/Dludora_Blog/tree/main/content"
