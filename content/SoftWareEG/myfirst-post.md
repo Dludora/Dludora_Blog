@@ -80,7 +80,7 @@ INSTALLED_APPS = [
 
 在`models.py`文件中添加好自己想要的内容后，运行`python manage.py makemigrations`, `python manage.py migrate`
 
-##### 超级管理员
+#### 超级管理员
 
 在终端中，输入`python manage.py createsuperuser`后，按照提示创建超级管理员账号
 
@@ -111,5 +111,83 @@ class Author(models.Model):
     username = models.CharField(max_length=50,primary_key=False)
     password = models.CharField(max_length=20)
     email = models.EmailField()
+```
+
+#### 安装def-rest-framework
+
+##### 终端依次输入指令
+
+`pip install djangorestframework`
+
+`pip install markdown`
+
+`pip install django-filter`
+
+##### 配置`drf settings.py`文件
+
+###### 引入app
+
+```python
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'rest_framework',	// 写在所有自定义模块之上
+    'backend.apps.BackendConfig',
+]
+```
+
+###### 引入drf
+
+放在DATA_BASE以下
+
+```
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
+```
+
+#### 实现cors跨域
+
+命令行输入`pip install django-cors-headers` 
+
+在`settings.py` 中的`INSTALED_APPS`中引入`corsheaders` , `MIDDLEWARE`中的第三位引入`corsheaders.middleware.CorsMiddleware`
+
+文件最下方加入
+
+```python
+CORS_ORIGIN_WHITELIST = (
+    'http://127.0.0.1:8080',
+    'http://localhost:8080',
+)
+CORS_ALLOW_CREDENTIALS = True  # 指明在跨域访问中，后端是否支持对cookie的操作。
+
+CORS_ALLOW_METHODS = (
+ 'DELETE',
+ 'GET',
+ 'OPTIONS',
+ 'PATCH',
+ 'POST',
+ 'PUT',
+ 'VIEW',
+)
+CORS_ALLOW_HEADERS = (
+ 'XMLHttpRequest',
+ 'X_FILENAME',
+ 'accept-encoding',
+ 'authorization',
+ 'content-type',
+ 'dnt',
+ 'origin',
+ 'user-agent',
+ 'x-csrftoken',
+ 'x-requested-with',
+ 'Pragma',
+)
 ```
 

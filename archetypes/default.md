@@ -1,4 +1,3 @@
-
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
@@ -19,3 +18,4 @@ mathjax: true
 mathjaxEnableSingleDollar: false
 mathjaxEnableAutoNumber: false
 ---
+
