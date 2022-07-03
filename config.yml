@@ -29,6 +29,8 @@ params:
               url: /Dludora_Blog/vue
             - name: Java
               url: /Dludora_Blog/java
+            - name: frontEnd
+              url: /Dludora_Blog/froneEnd
     socialIcons: 
         - name: "github"
           url: "https://github.com/Dludora"
