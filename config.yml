@@ -28,7 +28,7 @@ params:
             - name: Java
               url: /Dludora_Blog/java
             - name: frontEnd
-              url: /Dludora_Blog/frontEnd
+              url: /Dludora_Blog/frontend
     socialIcons: 
         - name: "github"
           url: "https://github.com/Dludora"
