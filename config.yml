@@ -25,8 +25,6 @@ params:
               url: /Dludora_Blog/softwareeg
             - name: MySQL
               url: /Dludora_Blog/mysql
-            - name: Vue
-              url: /Dludora_Blog/vue
             - name: Java
               url: /Dludora_Blog/java
             - name: frontEnd
